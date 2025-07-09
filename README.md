@@ -1,2 +1,1 @@
-# minitalk
-this is the 42 Project minitalk
+this is just a quick exercise to do minitalk, like we almost did one time but in better
