@@ -3,26 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csteudin <csteudin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nakama <nakama@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 19:36:11 by csteudin          #+#    #+#             */
-/*   Updated: 2024/03/27 16:48:30 by csteudin         ###   ########.fr       */
+/*   Updated: 2025/07/10 16:39:42 by nakama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *str)
-{
-	int	i;
 
-	i = 0;
-	if (str == NULL)
-		return (-1);
-	while (str[i])
-		i++;
-	return (i);
-}
 
 int	ft_putnbr_base_len(unsigned int num, char *base, int *res)
 {
