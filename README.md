@@ -1,1 +1,1 @@
-this is just a quick exercise to do minitalk, like we almost did one time but in better
+this is the project minitalk of the 42 cursus
