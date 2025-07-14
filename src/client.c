@@ -50,14 +50,19 @@ int transmit_message(char *msg, pid_t pid)
 	return (0);
 }
 
+// signal receiver func
+
 int main(int ac, char **av)
 {
 	pid_t pid;
-	
+
 	if (check_input(ac, av) == -1)
 		return (ft_err("./client <PID> <MESSAGE>", 1));
 	pid = ft_atoi(av[1]);
 	if (kill(pid, 0) == -1)
 		return (ft_err("The PID is not reachable !", 1));
-	return (transmit_message(av[2], pid));
+	//set signal receiver
+		transmit_message(av[2], pid);
+	
+	return (0);
 }

@@ -2,6 +2,8 @@
 #include <signal.h>
 #include <stdint.h>
 
+//send ack function
+
 /*
 * - we initalize the char as 00000000.
 * - we shift it every time we get a signal.
